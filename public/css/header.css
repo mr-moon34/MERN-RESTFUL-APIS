@@ -1,0 +1,87 @@
+/* General reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    color: rgb(0, 0, 0);
+    border-bottom:1px solid #e9e9e9;
+}
+
+/* Logo Styles */
+.logo-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Navbar Styles */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar li a:hover {
+    color: #007bff;
+}
+
+/* Header Actions (Login, Sign Up) */
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.header-actions .btn {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.header-actions .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}

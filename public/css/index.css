@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Actions Section */
+.actions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.create-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Posts Section */
+.posts {
+    margin-top: 20px;
+}
+
+/* Individual Post */
+.post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* Post Header */
+.post-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #007bff;
+}
+
+/* Post Content */
+.post-content h4 {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Post Actions */
+.post-actions {
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Buttons */
+.post-actions .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+/* View Button */
+.view-btn {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.view-btn:hover {
+    background-color: #218838;
+}
+
+/* Edit Button */
+.edit-btn {
+    color: #fff;
+    background-color: #ffc107;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Delete Button */
+.delete-btn {
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .create-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .post-actions .btn {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+}

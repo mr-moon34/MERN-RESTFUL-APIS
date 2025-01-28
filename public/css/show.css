@@ -1,0 +1,126 @@
+/* Global Reset for margin, padding, and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #ff6b6b, #f7a6b6); /* Gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centered container */
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Styling for the post details section */
+.post-details {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.post-id {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.post-content {
+    padding: 15px;
+    background: #f0f2f5;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Username styling */
+.username {
+    font-size: 2rem;
+    color: #e74c3c;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Content styling */
+.content {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Hover effects and animations */
+.post-content:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #8e44ad;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+footer p:hover {
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(45deg, #f7a6b6, #ff6b6b);
+    }
+
+    .container {
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .username {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        font-size: 1.3rem;
+    }
+}
